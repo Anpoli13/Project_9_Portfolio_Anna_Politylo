@@ -1,0 +1,57 @@
+.logo {
+    background: $gray-200;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+//------- Menu icon change -------------
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 3px;
+}
+  
+.bar1, 
+.bar2, 
+.bar3, 
+.bar4 {
+    width: 18px;
+    height: 2px;
+    background-color: $white;
+    border-radius: 1px;
+    transition: 0.4s;
+}
+
+.bar1 {
+    margin-bottom: 3px;
+}
+
+.bar4 {
+    margin-top: 3px;
+}
+
+.bar3 {
+    margin-top: -2px;
+}
+
+.change {
+    .bar2 {
+        transform: rotate(45deg);
+    }
+    .bar3 {
+        transform: rotate(-45deg);
+    }
+    .bar1,
+    .bar4 {
+        opacity: 0;
+    }
+}
+
+.project-icon {
+    width: 40px;
+    height: 40px;
+    background-color: $gray-900;
+    border-radius: 8px;
+}

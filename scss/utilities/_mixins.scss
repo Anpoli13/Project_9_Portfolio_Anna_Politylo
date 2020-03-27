@@ -1,0 +1,13 @@
+// Media query mixin
+@mixin mq($break) {
+    @if $break == "medium" {
+        @media (min-width: $br-md) {
+            @content;
+        }
+    } @else if $break == "large" {
+        @media (min-width: $br-lg) {
+            @content;
+        }
+    }
+}
+
