@@ -187,20 +187,23 @@ header {
   text-align: center;
 }
 
-.about {
-  padding: 80px 16px 40px 16px;
+.cta {
+  display: block;
+  padding: 40px 0;
 }
-.about h2 {
-  margin: 0;
-}
-
-.contact {
+.cta .about {
   padding: 40px 16px;
 }
-.contact h2 {
+.cta .about h2 {
+  margin: 0;
+}
+.cta .contact {
+  padding: 40px 16px;
+}
+.cta .contact h2 {
   margin: 8px 0;
 }
-.contact a {
+.cta .contact a {
   padding: 8px 0 40px 0;
 }
 

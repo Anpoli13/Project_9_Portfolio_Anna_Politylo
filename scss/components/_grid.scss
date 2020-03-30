@@ -45,19 +45,23 @@
     }
 }
 
-.about {
-    padding: 80px 16px 40px 16px;
-    h2 {
-        margin: 0;
+.cta {
+    display: block;
+    padding: 40px 0;
+    .about {
+        padding: 40px 16px;
+        h2 {
+            margin: 0;
+        }
     }
-}
 
-.contact {
-    padding: 40px 16px;
-    h2 {
-        margin: 8px 0;
-    }
-    a {
-        padding: 8px 0 40px 0;
+    .contact {
+        padding: 40px 16px;
+        h2 {
+            margin: 8px 0;
+        }
+        a {
+            padding: 8px 0 40px 0;
+        }
     }
 }
