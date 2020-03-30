@@ -9,6 +9,7 @@
     margin: 0 16px;
 }
 
+
 .card {
     background-color: $project-1;
     margin: 16px;
@@ -41,5 +42,22 @@
         display: block;
         width: 100%;
         text-align: center;
+    }
+}
+
+.about {
+    padding: 80px 16px 40px 16px;
+    h2 {
+        margin: 0;
+    }
+}
+
+.contact {
+    padding: 40px 16px;
+    h2 {
+        margin: 8px 0;
+    }
+    a {
+        padding: 8px 0 40px 0;
     }
 }

@@ -45,6 +45,24 @@
   font-size: 16px;
 }
 
+.about h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.contact h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 24px;
+}
+.contact a {
+  color: #AEB5B8;
+  font-weight: normal;
+  font-size: 24px;
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -119,6 +137,10 @@ header {
   border-radius: 8px;
 }
 
+.arrow {
+  margin-top: 8px;
+}
+
 .info {
   padding: 80px 16px;
 }
@@ -165,6 +187,23 @@ header {
   text-align: center;
 }
 
+.about {
+  padding: 80px 16px 40px 16px;
+}
+.about h2 {
+  margin: 0;
+}
+
+.contact {
+  padding: 40px 16px;
+}
+.contact h2 {
+  margin: 8px 0;
+}
+.contact a {
+  padding: 8px 0 40px 0;
+}
+
 .overlay {
   z-index: -999;
   display: none;
@@ -193,14 +232,14 @@ header {
   padding: 32px 0;
   text-align: center;
 }
-.overlay .social-icons {
+.overlay .sm-icons {
   display: inline-block;
   position: fixed;
   bottom: 16px;
   width: 100%;
   text-align: center;
 }
-.overlay .social-icons img {
+.overlay .sm-icons img {
   padding: 8px;
   margin: 0 4px;
 }
