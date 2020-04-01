@@ -130,13 +130,6 @@ header {
   opacity: 0;
 }
 
-.project-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #1C1E1F;
-  border-radius: 8px;
-}
-
 .arrow {
   margin-top: 8px;
 }
