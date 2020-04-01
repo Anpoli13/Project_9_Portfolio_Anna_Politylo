@@ -3,10 +3,13 @@
     line-height: 140%;
 }
 
+body {
+    color: $color-text-primary;
+}
+
 .overlay {
     ul {
         font-size: 28px;
-        color: $color-text-primary;
     }
 }
 

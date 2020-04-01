@@ -1,9 +1,11 @@
 * {
   font-family: museo-sans, sans-serif;
+  line-height: 140%;
 }
 
 .overlay ul {
   font-size: 28px;
+  color: #AEB5B8;
 }
 
 .info h1, .info p {
@@ -41,7 +43,7 @@
 .card .card-btn {
   color: #1C1E1F;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -69,7 +71,6 @@
 
 body {
   background-color: #1C1E1F;
-  color: #AEB5B8;
 }
 
 header {
@@ -81,13 +82,6 @@ header {
   position: sticky;
   top: 0;
   background-color: #1C1E1F;
-}
-
-.logo {
-  background: #EBEEF0;
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
 }
 
 .container {
@@ -146,7 +140,6 @@ header {
 }
 
 .card {
-  background-color: #F4E9F3;
   margin: 16px;
   padding: 16px;
   border-radius: 16px;
@@ -198,6 +191,30 @@ header {
 }
 .cta .contact a {
   padding: 8px 0 40px 0;
+}
+
+#pr-employee-directory {
+  background-color: #F3F4F7;
+}
+
+#pr-analytics-dashbouard {
+  background-color: #F5F3F7;
+}
+
+#pr-game {
+  background-color: #F7F3F3;
+}
+
+#pr-photo-gallery {
+  background-color: #F7F7F3;
+}
+
+#pr-styleguide {
+  background-color: #F3F7F3;
+}
+
+#pr-registration-form {
+  background-color: #F3F5F7;
 }
 
 .overlay {

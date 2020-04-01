@@ -3,8 +3,7 @@
 }
 
 body {
-    background-color: $gray-900;
-    color: $gray-500;
+    background-color: $color-background-primary;
 }
 
 header{
@@ -15,5 +14,5 @@ header{
     z-index: 2;
     position: sticky;
     top: 0;
-    background-color: $gray-900;
+    background-color: $color-background-primary;
 }

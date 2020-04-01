@@ -11,7 +11,7 @@
 
 
 .card {
-    background-color: $project-1;
+    //background-color: $project-1;
     margin: 16px;
     padding: 16px;
     border-radius: 16px;
@@ -27,7 +27,7 @@
         li {
             display: inline-block;
             text-align: center;
-            border: 1px solid rgba($gray-700, .08);
+            border: 1px solid $color-button;
             border-radius: 100px;
             margin-right: 4px;
             margin-top: 8px;
@@ -35,7 +35,7 @@
         }
     }
     .card-btn {
-        background-color: rgba($gray-700, .08);
+        background-color: $color-button;
         border: none;
         border-radius: 8px;
         padding: 12px 24px;
@@ -64,4 +64,28 @@
             padding: 8px 0 40px 0;
         }
     }
+}
+
+#pr-employee-directory {
+    background-color: $project-1;
+}
+
+#pr-analytics-dashbouard {
+    background-color: $project-2;
+}
+
+#pr-game {
+    background-color: $project-3;
+}
+
+#pr-photo-gallery {
+    background-color: $project-4;
+}
+
+#pr-styleguide {
+    background-color: $project-5;
+}
+
+#pr-registration-form {
+    background-color: $project-6;
 }
