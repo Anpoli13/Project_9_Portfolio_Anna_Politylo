@@ -11,7 +11,6 @@
 .info h1, .info p {
   font-size: 28px;
   font-weight: normal;
-  font-style: normal;
 }
 .info h1 {
   color: #AEB5B8;
@@ -47,22 +46,55 @@
   font-size: 16px;
 }
 
-.about h2 {
+.about h2,
+.resume h2 {
   color: white;
   font-weight: normal;
   font-size: 24px;
 }
 
-.contact h2 {
-  color: white;
+.contact h2, .contact a {
   font-weight: normal;
   font-size: 24px;
 }
+.contact h2 {
+  color: white;
+}
 .contact a {
   color: #AEB5B8;
+  text-decoration: none;
+}
+
+.about-info h1, .about-info p {
   font-weight: normal;
   font-size: 24px;
-  text-decoration: none;
+}
+.about-info h1 {
+  color: #AEB5B8;
+}
+.about-info p {
+  color: white;
+}
+
+.experience {
+  color: #AEB5B8;
+}
+.experience h2 {
+  font-weight: normal;
+  font-size: 24px;
+}
+.experience .exp-card h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.experience .exp-card .period {
+  font-weight: normal;
+  font-size: 12px;
+}
+.experience .exp-card p {
+  font-weight: normal;
+  font-size: 16px;
 }
 
 * {
@@ -124,11 +156,13 @@ header {
   opacity: 0;
 }
 
-.arrow {
+.arrow,
+.download {
   margin-top: 8px;
 }
 
 .info {
+  display: block;
   padding: 80px 16px;
 }
 .info h1, .info p {
@@ -177,10 +211,12 @@ header {
   display: block;
   padding: 40px 0;
 }
-.cta .about {
+.cta .about,
+.cta .resume {
   padding: 40px 16px;
 }
-.cta .about h2 {
+.cta .about h2,
+.cta .resume h2 {
   margin: 0;
 }
 .cta .contact {
@@ -262,6 +298,34 @@ header {
 .overlay .sm-icons img {
   padding: 8px;
   margin: 0 4px;
+}
+
+.about-info, .experience {
+  display: block;
+  padding: 80px 16px;
+}
+
+.about-info h1, .about-info p {
+  margin: 8px 0;
+}
+
+.experience {
+  background-color: #000000;
+}
+.experience h2 {
+  margin: 0;
+}
+.experience .exp-card {
+  margin: 16px 0;
+  background-color: #1C1E1F;
+  padding: 16px;
+  border-radius: 16px;
+}
+.experience .exp-card h3 {
+  margin: 0;
+}
+.experience .exp-card .period {
+  margin-top: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

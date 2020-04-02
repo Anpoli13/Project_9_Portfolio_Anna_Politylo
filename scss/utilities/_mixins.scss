@@ -11,3 +11,9 @@
     }
 }
 
+// Typography
+
+@mixin text-primary {
+    font-weight: normal;
+    font-size: $base-font-size;
+}

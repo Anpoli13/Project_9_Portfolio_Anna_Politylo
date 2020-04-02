@@ -1,0 +1,29 @@
+.about-info, .experience {
+    display: block;
+    padding: 80px 16px;
+}
+
+.about-info {
+    h1, p{
+        margin: 8px 0;
+    }
+}
+
+.experience {
+    background-color: $black;
+    h2 {
+        margin: 0;
+    }
+    .exp-card {
+        margin: 16px 0;
+        background-color: $color-text-dark;
+        padding: 16px;
+        border-radius: 16px;
+        h3 {
+            margin: 0;
+        }
+        .period {
+            margin-top: 8px;
+        }
+    }
+}

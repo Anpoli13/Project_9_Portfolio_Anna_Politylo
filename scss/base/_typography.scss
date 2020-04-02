@@ -10,11 +10,12 @@
     }
 }
 
+// Index
+
 .info {
     h1, p{
         font-size: 28px;
         font-weight: normal;
-        font-style: normal;
     }
     h1 {
         color: $color-text-primary;
@@ -26,8 +27,9 @@
 
 .label {
     color: $color-text-primary;
-    font-weight: normal;
-    font-size: 24px;
+    @include text-primary;
+    // font-weight: normal;
+    // font-size: $base-font-size;
 }
 
 .card {
@@ -53,24 +55,65 @@
     }
 }
 
-.about {
+.about,
+.resume {
     h2 {
         color: $white;
-        font-weight: normal;
-        font-size: 24px;
+        @include text-primary;
+        // font-weight: normal;
+        // font-size: $base-font-size;
     }
 }
 
 .contact {
+    h2, a {
+        @include text-primary;
+        // font-weight: normal;
+        // font-size: $base-font-size;
+    }
     h2 {
         color: $white;
-        font-weight: normal;
-        font-size: 24px;
     }
     a {
         color: $color-text-primary;
-        font-weight: normal;
-        font-size: 24px;
         text-decoration: none;
+    }
+}
+
+// About
+
+.about-info {
+    h1, p {
+        @include text-primary;
+        // font-weight: normal;
+        // font-size: $base-font-size; 
+    }
+    h1 {
+        color: $color-text-primary;
+    }
+    p {
+        color: $white;
+    }
+}
+
+.experience {
+    color: $color-text-primary;
+    h2 {
+        @include text-primary;
+    }
+    .exp-card {
+        h3 {
+            color: $white;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .period {
+            font-weight: normal;
+            font-size: 12px;
+        }
+        p {
+            font-weight: normal;
+            font-size: 16px;
+        }
     }
 }
