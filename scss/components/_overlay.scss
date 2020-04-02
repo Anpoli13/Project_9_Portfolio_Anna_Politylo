@@ -64,6 +64,15 @@
                 padding: 32px 0;
                 //text-decoration: none;
                 text-align: center;
+
+                .nav {
+                    text-decoration: none;
+                    color: $color-text-primary;
+                }
+
+                .nav-active {
+                    color: $white;
+                }
             }
         }
     }

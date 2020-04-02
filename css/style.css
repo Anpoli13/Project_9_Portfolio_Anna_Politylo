@@ -245,6 +245,13 @@ header {
   padding: 32px 0;
   text-align: center;
 }
+.overlay nav ul li .nav {
+  text-decoration: none;
+  color: #AEB5B8;
+}
+.overlay nav ul li .nav-active {
+  color: white;
+}
 .overlay .sm-icons {
   display: inline-block;
   position: fixed;
