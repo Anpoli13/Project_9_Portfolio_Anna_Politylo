@@ -162,7 +162,6 @@ header {
 }
 
 .info {
-  display: block;
   padding: 80px 16px;
 }
 .info h1, .info p {
@@ -208,7 +207,6 @@ header {
 }
 
 .cta {
-  display: block;
   padding: 40px 0;
 }
 .cta .about,
@@ -301,7 +299,6 @@ header {
 }
 
 .about-info, .experience {
-  display: block;
   padding: 80px 16px;
 }
 
