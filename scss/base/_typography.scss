@@ -5,7 +5,7 @@
 
 .overlay {
     ul {
-        font-size: 28px;
+        font-size: $font-size-l;
         color: $color-text-primary;
     }
 }
@@ -14,7 +14,7 @@
 
 .info {
     h1, p{
-        font-size: 28px;
+        font-size: $font-size-l;
         font-weight: normal;
     }
     h1 {
@@ -34,37 +34,37 @@
 
 .card {
     h3 {
-        font-size: 20px;
+        font-size: $font-size-s;
         color: $color-text-dark;
         font-weight: 500;
     }
     p {
-        font-size: 16px;
+        font-size: $font-size-xs;
         color: $color-text-secondary;
     }
     ul {
         list-style: none;
-        font-size: 12px;
+        font-size: $font-size-xxs;
         color: $color-text-secondary;
     }
     .card-btn {
         color: $color-text-dark;
         text-decoration: none;
         font-weight: bold;
-        font-size: 16px;
+        font-size: $font-size-xs;
     }
 }
 
+//  {
+//     h2 {
+//         color: $white;
+//         @include text-primary;
+//         // font-weight: normal;
+//         // font-size: $base-font-size;
+//     }
+// }
 .about,
-.resume {
-    h2 {
-        color: $white;
-        @include text-primary;
-        // font-weight: normal;
-        // font-size: $base-font-size;
-    }
-}
-
+.to-projcts,
 .contact {
     h2, a {
         @include text-primary;
@@ -83,37 +83,60 @@
 // About
 
 .about-info {
-    h1, p {
+    h1{
         @include text-primary;
+        color: $color-text-primary;
         // font-weight: normal;
         // font-size: $base-font-size; 
     }
-    h1 {
-        color: $color-text-primary;
-    }
     p {
         color: $white;
+        font-size: $font-size-s;
     }
 }
 
-.experience {
+.experience,
+.education,
+.resume {
     color: $color-text-primary;
     h2 {
         @include text-primary;
     }
-    .exp-card {
-        h3 {
-            color: $white;
-            font-weight: 500;
-            font-size: 20px;
-        }
-        .period {
-            font-weight: normal;
-            font-size: 12px;
-        }
-        p {
-            font-weight: normal;
-            font-size: 16px;
-        }
+}
+
+.exp-card,
+.ed-card {
+    h3 {
+        color: $white;
+        font-weight: 500;
+        font-size: $font-size-s;
+    }
+    .period {
+        font-weight: normal;
+        font-size: $font-size-xxs;
+    }
+    p {
+        font-weight: normal;
+        font-size: $font-size-xs;
+    }
+}
+ 
+.skills {
+    h2 {
+        @include text-primary;
+        color: $color-text-primary;
+    }
+    ul {
+        list-style: none;
+        color: $white;
+        font-size: $font-size-xs;
+    }
+}
+
+.resume {
+    a {
+        text-decoration: none;
+        color: $white;
+        font-size: $font-size-xs;
     }
 }

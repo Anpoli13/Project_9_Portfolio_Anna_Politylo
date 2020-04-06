@@ -1,9 +1,9 @@
-// .logo {
-//     background: $gray-200;
-//     //width: 32px;
-//     //height: 32px;
-//     border-radius: 8px;
-// }
+.logo {
+    background: $gray-100;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
 
 //------- Menu icon change -------------
 
@@ -56,7 +56,10 @@
 //     border-radius: 8px;
 // }
 
-.arrow, 
-.download {
+.arrow {
     margin-top: 8px;
+}
+
+.ic-download {
+    margin: 0 8px;
 }

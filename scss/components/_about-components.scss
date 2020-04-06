@@ -1,6 +1,13 @@
-.about-info, .experience {
-    //display: block;
+.about-info {
     padding: 80px 16px;
+}
+
+.experience,
+.skills,
+.education,
+.resume {
+    padding: 40px 16px;
+    background-color: $black;
 }
 
 .about-info {
@@ -9,12 +16,13 @@
     }
 }
 
-.experience {
-    background-color: $black;
+.experience,
+.education {
     h2 {
         margin: 0;
     }
-    .exp-card {
+    .exp-card,
+    .ed-card {
         margin: 16px 0;
         background-color: $color-text-dark;
         padding: 16px;
@@ -25,5 +33,34 @@
         .period {
             margin-top: 8px;
         }
+    }
+}
+
+.skills {
+    h2 {
+        margin: 40px 0 0 0;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            text-align: center;
+            background-color: $color-background-primary;
+            border-radius: 100px;
+            padding: 4px 12px;
+            margin: 16px 8px 0 0;
+        }
+    }
+}
+
+.resume {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-background-primary;
+        border-radius: 8px;
+        padding: 12px ;
     }
 }

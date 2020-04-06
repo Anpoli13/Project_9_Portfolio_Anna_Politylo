@@ -46,54 +46,79 @@
   font-size: 16px;
 }
 
+.about h2, .about a,
+.to-projcts h2,
+.to-projcts a,
+.contact h2,
+.contact a {
+  font-weight: normal;
+  font-size: 24px;
+}
 .about h2,
-.resume h2 {
-  color: white;
-  font-weight: normal;
-  font-size: 24px;
-}
-
-.contact h2, .contact a {
-  font-weight: normal;
-  font-size: 24px;
-}
+.to-projcts h2,
 .contact h2 {
   color: white;
 }
+.about a,
+.to-projcts a,
 .contact a {
   color: #AEB5B8;
   text-decoration: none;
 }
 
-.about-info h1, .about-info p {
+.about-info h1 {
   font-weight: normal;
   font-size: 24px;
-}
-.about-info h1 {
   color: #AEB5B8;
 }
 .about-info p {
   color: white;
+  font-size: 20px;
 }
 
-.experience {
+.experience,
+.education,
+.resume {
   color: #AEB5B8;
 }
-.experience h2 {
+.experience h2,
+.education h2,
+.resume h2 {
   font-weight: normal;
   font-size: 24px;
 }
-.experience .exp-card h3 {
+
+.exp-card h3,
+.ed-card h3 {
   color: white;
   font-weight: 500;
   font-size: 20px;
 }
-.experience .exp-card .period {
+.exp-card .period,
+.ed-card .period {
   font-weight: normal;
   font-size: 12px;
 }
-.experience .exp-card p {
+.exp-card p,
+.ed-card p {
   font-weight: normal;
+  font-size: 16px;
+}
+
+.skills h2 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #AEB5B8;
+}
+.skills ul {
+  list-style: none;
+  color: white;
+  font-size: 16px;
+}
+
+.resume a {
+  text-decoration: none;
+  color: white;
   font-size: 16px;
 }
 
@@ -114,6 +139,13 @@ header {
   position: sticky;
   top: 0;
   background-color: #1C1E1F;
+}
+
+.logo {
+  background: #F7F9FA;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
 }
 
 .container {
@@ -156,9 +188,12 @@ header {
   opacity: 0;
 }
 
-.arrow,
-.download {
+.arrow {
   margin-top: 8px;
+}
+
+.ic-download {
+  margin: 0 8px;
 }
 
 .info {
@@ -210,11 +245,11 @@ header {
   padding: 40px 0;
 }
 .cta .about,
-.cta .resume {
+.cta .to-projcts {
   padding: 40px 16px;
 }
 .cta .about h2,
-.cta .resume h2 {
+.cta .to-projcts h2 {
   margin: 0;
 }
 .cta .contact {
@@ -298,31 +333,71 @@ header {
   margin: 0 4px;
 }
 
-.about-info, .experience {
+.about-info {
   padding: 80px 16px;
+}
+
+.experience,
+.skills,
+.education,
+.resume {
+  padding: 40px 16px;
+  background-color: #000000;
 }
 
 .about-info h1, .about-info p {
   margin: 8px 0;
 }
 
-.experience {
-  background-color: #000000;
-}
-.experience h2 {
+.experience h2,
+.education h2 {
   margin: 0;
 }
-.experience .exp-card {
+.experience .exp-card,
+.experience .ed-card,
+.education .exp-card,
+.education .ed-card {
   margin: 16px 0;
   background-color: #1C1E1F;
   padding: 16px;
   border-radius: 16px;
 }
-.experience .exp-card h3 {
+.experience .exp-card h3,
+.experience .ed-card h3,
+.education .exp-card h3,
+.education .ed-card h3 {
   margin: 0;
 }
-.experience .exp-card .period {
+.experience .exp-card .period,
+.experience .ed-card .period,
+.education .exp-card .period,
+.education .ed-card .period {
   margin-top: 8px;
+}
+
+.skills h2 {
+  margin: 40px 0 0 0;
+}
+.skills ul {
+  padding: 0;
+  margin: 0;
+}
+.skills ul li {
+  display: inline-block;
+  text-align: center;
+  background-color: #1C1E1F;
+  border-radius: 100px;
+  padding: 4px 12px;
+  margin: 16px 8px 0 0;
+}
+
+.resume a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1C1E1F;
+  border-radius: 8px;
+  padding: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
