@@ -47,20 +47,20 @@
 }
 
 .about h2, .about a,
-.to-projcts h2,
-.to-projcts a,
+.to-projects h2,
+.to-projects a,
 .contact h2,
 .contact a {
   font-weight: normal;
   font-size: 24px;
 }
 .about h2,
-.to-projcts h2,
+.to-projects h2,
 .contact h2 {
   color: white;
 }
 .about a,
-.to-projcts a,
+.to-projects a,
 .contact a {
   color: #AEB5B8;
   text-decoration: none;
@@ -289,11 +289,11 @@ header .header .hide-sm {
   padding: 40px 0;
 }
 .cta .about,
-.cta .to-projcts {
+.cta .to-projects {
   padding: 40px 16px;
 }
 .cta .about h2,
-.cta .to-projcts h2 {
+.cta .to-projects h2 {
   margin: 0;
 }
 .cta .contact {
