@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Politylo</title>
+    <link rel="shortcut icon" href="img/ap.svg" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,96 +12,121 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/ap.svg" alt="AP" class="logo"></a>
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div class="bar4"></div>
+        <div class="header">
+            <a href="index.html"><img src="img/ap.svg" alt="AP" class="logo"></a>
+
+            <nav class="hide-sm">
+                <ul>
+                    <li><a href="index.html"  class="nav">Work</a></li>
+                    <li><a href="about.html" class="nav">About</a></li>
+                    <!-- <li>Contact</li> -->
+                </ul>
+            </nav>
+
+            <div class="sm-icons hide-sm">
+                <a href="https://www.linkedin.com/in/anna-politylo/" target="_blank"><img src="img/ic_social_linkedin.svg" alt="linkedin-icon" class="linkidin-icon"></a>
+                <a href="https://github.com/Anpoli13" target="_blank"><img src="img/ic_social_github.svg" alt="github-icon" class="github-icon"></a>
+                <a href="mailto:anna@politylo.xyz"><img src="img/ic_social_mail.svg" alt="email-icon" class="email-icon"></a>
+            </div>
+
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+            </div>
+        </div>
+    
+        <div class="overlay">
+            <nav>
+                <ul>
+                    <li><a href="index.html"  class="nav">Work</a></li>
+                    <li><a href="about.html" class="nav">About</a></li>
+                    <!-- <li>Contact</li> -->
+                </ul>
+            </nav>
+            <div class="sm-icons">
+                <a href="https://www.linkedin.com/in/anna-politylo/" target="_blank"><img src="img/ic_social_linkedin.svg" alt="linkedin-icon" class="linkidin-icon"></a>
+                <a href="https://github.com/Anpoli13" target="_blank"><img src="img/ic_social_github.svg" alt="github-icon" class="github-icon"></a>
+                <a href="mailto:anna@politylo.xyz"><img src="img/ic_social_mail.svg" alt="email-icon" class="email-icon"></a>
+            </div>
         </div>
     </header>
-    <div class="overlay">
-        <nav>
-            <ul>
-                <li><a href="index.html"  class="nav">Work</a></li>
-                <li><a href="about.html" class="nav">About</a></li>
-                <!-- <li>Contact</li> -->
-            </ul>
-        </nav>
-        <div class="sm-icons">
-            <a href="https://www.linkedin.com/in/anna-politylo/" target="_blank"><img src="img/ic_social_linkedin.svg" alt="linkedin-icon" class="linkidin-icon"></a>
-            <a href="https://github.com/Anpoli13" target="_blank"><img src="img/ic_social_github.svg" alt="github-icon" class="github-icon"></a>
-            <a href="mailto:anna@politylo.xyz"><img src="img/ic_social_mail.svg" alt="email-icon" class="email-icon"></a>
-        </div>
-    </div>
+
     <main>
         <section class="about-info">
             <h1>About me</h1>
             <p>I'm a fast-learning, organised and an analytical-minded person with good communication skills. All this helped me quickly and properly diagnose patient problems to ensure they receive appropriate treatment over the past 3 years. However, due to relocation, I'm open to applying all gained skills and knowledge to new challenges. </p>
         </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Sass</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>SVG</li>
-                    <li>Bootstrap</li>
-                    <li>git</li>
-                    <li>API</li>
-                    <li>Facebook Ads</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Lightroom</li>
-                </ul>
-        </section>
+        <section class="section-info">
+            <section class="skills">
+                <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Sass</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>SVG</li>
+                        <li>Bootstrap</li>
+                        <li>git</li>
+                        <li>API</li>
+                        <li>Facebook Ads</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Lightroom</li>
+                    </ul>
+            </section>
 
-        <section class="education">
-            <h2>Education</h2>
+            <section class="education">
+                <h2>Education</h2>
 
-            <div class="ed-card">
-                <h3>Treehouse</h3>
-                <p class="period">Front End Web Development Techdegree <br>
-                    2019 – 2020</p>
-            </div>
+                <div class="ed-cards">
+                    <div class="ed-card">
+                        <h3>Treehouse</h3>
+                        <p class="period">Front End Web Development Techdegree <br>
+                            2019 – 2020</p>
+                    </div>
 
-            <div class="ed-card">
-                <h3>Lviv National Medical University 'Danylo Halycky'​</h3>
-                <p class="period">MSc in Pediatrician <br>
-                    2010 – 2016</p>
-            </div>
-        </section>
+                    <div class="ed-card">
+                        <h3>Lviv National Medical University 'Danylo Halycky'​</h3>
+                        <p class="period">MSc in Pediatrician <br>
+                            2010 – 2016</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="experience">
-            <h2>Experience</h2>
+            <section class="experience">
+                <h2>Experience</h2>
 
-            <div class="exp-card">
-                <h3>SMM Specialist @ OZKO</h3>
-                <p class="period">Dec 2018 – Jan 2020 • Remote</p>
-                <p>OZKO Ukraine is a medium-sized notebook and haberdashery manufacturer with more than 12 years of experience working on B2C market under stand-alone brand like U.</p>
-            </div>
+                <div class="exp-cards">
+                    <div class="exp-card">
+                        <h3>SMM Specialist @ OZKO</h3>
+                        <p class="period">Dec 2018 – Jan 2020 • Remote</p>
+                        <p>OZKO Ukraine is a medium-sized notebook and haberdashery manufacturer with more than 12 years of experience working on B2C market under stand-alone brand like U.</p>
+                    </div>
 
-            <div class="exp-card">
-                <h3>Pediatrician @ Zhovkva Central Hospital </h3>
-                <p class="period">Oct 2018 – Dec 2018 • Lviv, Ukraine</p>
-                <p>Zhovkva Central District Hospital is the largest medical facility in the region. It provides ambulatory policlinic and in-patient care by carrying on a complex of preventive measures and patient education as well as monitoring health condition.</p>
-            </div>
+                    <div class="exp-card">
+                        <h3>Pediatrician @ Zhovkva Central Hospital </h3>
+                        <p class="period">Oct 2018 – Dec 2018 • Lviv, Ukraine</p>
+                        <p>Zhovkva Central District Hospital is the largest medical facility in the region. It provides ambulatory policlinic and in-patient care by carrying on a complex of preventive measures and patient education as well as monitoring health condition.</p>
+                    </div>
 
-            <div class="exp-card">
-                <h3>Doctor Intern @ Lviv City Children's Community Hospital</h3>
-                <p class="period">Sep 2016 – Oct 2018 • Lviv, Ukraine</p>
-                <p>Lviv City Children's Community Hospital is the largest children hospital in the region with 400 beds, 13 physiological and surgery clinical units and a proven record of participation in international medical programs.</p>
-            </div>
-        </section>
+                    <div class="exp-card">
+                        <h3>Doctor Intern @ Lviv City Children's Community Hospital</h3>
+                        <p class="period">Sep 2016 – Oct 2018 • Lviv, Ukraine</p>
+                        <p>Lviv City Children's Community Hospital is the largest children hospital in the region with 400 beds, 13 physiological and surgery clinical units and a proven record of participation in international medical programs.</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="resume">
-            <h2>Resume</h2>
-                <a href="" download class="download">
-                    <img src="img/download.svg" alt="download" class="ic-download">
-                    Download PDF
-                </a>
+            <section class="resume">
+                <h2>Resume</h2>
+                    <a href="" download class="download">
+                        <img src="img/download.svg" alt="download" class="ic-download">
+                        Download PDF
+                    </a>
+            </section>
         </section>
     
 

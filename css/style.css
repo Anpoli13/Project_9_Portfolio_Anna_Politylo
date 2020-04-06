@@ -131,14 +131,58 @@ body {
 }
 
 header {
+  display: inline;
+}
+header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  z-index: 2;
+  z-index: 3;
   position: sticky;
   top: 0;
   background-color: #1C1E1F;
+}
+header .header .hide-sm {
+  display: none;
+}
+@media (min-width: 768px) {
+  header .header .container {
+    display: none;
+  }
+  header .header .hide-sm {
+    display: block;
+  }
+  header .header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header .header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  header .header nav ul li {
+    display: inline;
+  }
+  header .header nav ul li .nav {
+    text-decoration: none;
+    color: white;
+    padding: 5px 16px;
+  }
+  header .header nav ul li .nav-active {
+    color: #1C1E1F;
+    background: #F7F9FA;
+    border-radius: 8px;
+    padding: 5px 16px;
+    margin: 0 8px;
+  }
+  header .header .sm-icons img {
+    width: 18px;
+    height: 18px;
+    margin: 8px;
+  }
 }
 
 .logo {
@@ -337,12 +381,15 @@ header {
   padding: 80px 16px;
 }
 
+.section-info {
+  background-color: #000000;
+}
+
 .experience,
 .skills,
 .education,
 .resume {
   padding: 40px 16px;
-  background-color: #000000;
 }
 
 .about-info h1, .about-info p {
@@ -398,6 +445,73 @@ header {
   background-color: #1C1E1F;
   border-radius: 8px;
   padding: 12px;
+}
+
+@media (min-width: 768px) {
+  .about-info,
+.skills,
+.education,
+.experience,
+.resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .about-info h2,
+.skills h2,
+.education h2,
+.experience h2,
+.resume h2 {
+    width: 45%;
+  }
+  .about-info .ed-cards,
+.about-info .exp-cards,
+.skills .ed-cards,
+.skills .exp-cards,
+.education .ed-cards,
+.education .exp-cards,
+.experience .ed-cards,
+.experience .exp-cards,
+.resume .ed-cards,
+.resume .exp-cards {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .about-info h1 {
+    width: 45%;
+  }
+  .about-info p {
+    width: 45%;
+  }
+
+  .skills ul {
+    width: 45%;
+  }
+
+  .resume .download {
+    width: 45%;
+    background-color: #1C1E1F;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .cta .to-projects,
+.cta .contact {
+    width: 45%;
+  }
+  .cta .to-projects h2,
+.cta .contact h2 {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

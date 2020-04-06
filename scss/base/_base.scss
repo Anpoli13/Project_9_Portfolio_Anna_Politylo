@@ -7,12 +7,62 @@ body {
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    z-index: 2;
-    position: sticky;
-    top: 0;
-    background-color: $color-background-primary;
+    display: inline;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        z-index: 3;
+        position: sticky;
+        top: 0;
+        background-color: $color-background-primary;
+        .hide-sm {
+            display: none;
+        }
+        @include mq(medium) {
+            .container {
+                display: none;
+            }
+            .hide-sm {
+                display: block;
+            }
+            nav {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        display: inline;
+                        .nav {
+                            text-decoration: none;
+                            color: $white;
+                            padding: 5px 16px;
+                        }
+        
+                        .nav-active {
+                            color: $color-text-dark;
+                            background: $gray-100;
+                            border-radius: 8px;
+                            padding: 5px 16px;
+                            margin: 0 8px;
+                        }
+                    }
+                }
+            }
+            .sm-icons {
+                img {
+                    width: 18px;
+                    height: 18px;
+                    margin: 8px;
+                }
+            }
+        }
+    }
+    
 }
