@@ -28,8 +28,6 @@
 .label {
     color: $color-text-primary;
     @include text-primary;
-    // font-weight: normal;
-    // font-size: $base-font-size;
 }
 
 .card {
@@ -55,21 +53,11 @@
     }
 }
 
-//  {
-//     h2 {
-//         color: $white;
-//         @include text-primary;
-//         // font-weight: normal;
-//         // font-size: $base-font-size;
-//     }
-// }
 .about,
 .to-projects,
 .contact {
     h2, a {
         @include text-primary;
-        // font-weight: normal;
-        // font-size: $base-font-size;
     }
     h2 {
         color: $white;
@@ -86,8 +74,6 @@
     h1{
         @include text-primary;
         color: $color-text-primary;
-        // font-weight: normal;
-        // font-size: $base-font-size; 
     }
     p {
         color: $white;
