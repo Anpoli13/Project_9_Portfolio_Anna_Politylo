@@ -44,6 +44,9 @@
         width: 100%;
         text-align: center;
     }
+    .project-img {
+        display: none;
+    }
 }
 
 .cta {
@@ -89,4 +92,35 @@
 
 #pr-registration-form {
     background-color: $project-6;
+}
+
+@include mq(medium) {
+    .info,
+    .projects {
+        max-width: 992px;
+        margin: 0 auto;
+        .card {
+            display: flex;
+            overflow: auto;
+            .project-img {
+                display: block;
+                width: 50%;
+                margin: 0 -16px -16px 16px;
+            }
+        }
+        .card-btn {
+            width: 50%;
+        }
+    }
+}
+
+@include mq(large) {
+    .cta {
+        .hover-color:hover {
+            filter: brightness(2);
+        }
+        a:hover {
+            color: $white;
+        }
+    }
 }

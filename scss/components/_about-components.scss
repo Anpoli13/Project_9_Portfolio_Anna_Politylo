@@ -84,8 +84,7 @@
             width: 45%;
         }
 
-        .ed-cards,
-        .exp-cards {
+        .about-cards {
             display: flex;
             flex-direction: column;
             width: 45%;
@@ -108,7 +107,6 @@
 
     .resume {
         .download {
-            width: 45%;
             background-color: $color-background-primary;
         }
     }
@@ -129,4 +127,19 @@
         }
     }
      
+}
+
+@include mq(large) {
+    .resume {
+        a {
+            justify-content: start;
+        }
+        .download {
+            background-color: $black;
+            &:hover {
+                background-color: rgba($white, 0.08);
+                width: 45%;
+            }
+        }
+    }
 }

@@ -184,6 +184,15 @@ header .header .hide-sm {
     margin: 8px;
   }
 }
+@media (min-width: 1024px) {
+  header .header .nav:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+  }
+  header .header .sm-icons a .hover-color:hover {
+    filter: brightness(2);
+  }
+}
 
 .logo {
   background: #F7F9FA;
@@ -284,6 +293,9 @@ header .header .hide-sm {
   width: 100%;
   text-align: center;
 }
+.card .project-img {
+  display: none;
+}
 
 .cta {
   padding: 40px 0;
@@ -330,6 +342,36 @@ header .header .hide-sm {
   background-color: #F3F5F7;
 }
 
+@media (min-width: 768px) {
+  .info,
+.projects {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .info .card,
+.projects .card {
+    display: flex;
+    overflow: auto;
+  }
+  .info .card .project-img,
+.projects .card .project-img {
+    display: block;
+    width: 50%;
+    margin: 0 -16px -16px 16px;
+  }
+  .info .card-btn,
+.projects .card-btn {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .cta .hover-color:hover {
+    filter: brightness(2);
+  }
+  .cta a:hover {
+    color: white;
+  }
+}
 .overlay {
   z-index: -999;
   display: none;
@@ -466,16 +508,11 @@ header .header .hide-sm {
 .resume h2 {
     width: 45%;
   }
-  .about-info .ed-cards,
-.about-info .exp-cards,
-.skills .ed-cards,
-.skills .exp-cards,
-.education .ed-cards,
-.education .exp-cards,
-.experience .ed-cards,
-.experience .exp-cards,
-.resume .ed-cards,
-.resume .exp-cards {
+  .about-info .about-cards,
+.skills .about-cards,
+.education .about-cards,
+.experience .about-cards,
+.resume .about-cards {
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -493,7 +530,6 @@ header .header .hide-sm {
   }
 
   .resume .download {
-    width: 45%;
     background-color: #1C1E1F;
   }
 
@@ -511,6 +547,18 @@ header .header .hide-sm {
   .cta .to-projects h2,
 .cta .contact h2 {
     margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .resume a {
+    justify-content: start;
+  }
+  .resume .download {
+    background-color: #000000;
+  }
+  .resume .download:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 45%;
   }
 }
 

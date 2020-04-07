@@ -63,6 +63,21 @@ header{
                 }
             }
         }
+        @include mq(large) {
+            .nav {
+                &:hover {
+                    background-color: rgba($white, 0.08);
+                    border-radius: 8px;
+                }
+            }
+            .sm-icons {
+                a {
+                    .hover-color:hover {
+                        filter: brightness(2);
+                    }
+                }
+            }
+        }
     }
     
 }
