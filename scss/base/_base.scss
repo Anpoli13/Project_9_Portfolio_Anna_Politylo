@@ -6,7 +6,7 @@ body {
     background-color: $color-background-primary;
 }
 
-header{
+header {
     display: inline;
 
     .header {
@@ -18,20 +18,25 @@ header{
         position: sticky;
         top: 0;
         background-color: $color-background-primary;
+
         .hide-sm {
             display: none;
         }
+
         @include mq(medium) {
             .container {
                 display: none;
             }
+
             .hide-sm {
                 display: block;
             }
+
             nav {
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
+
                 ul {
                     list-style: none;
                     margin: 0;
@@ -39,12 +44,13 @@ header{
 
                     li {
                         display: inline;
+
                         .nav {
                             text-decoration: none;
                             color: $white;
                             padding: 5px 16px;
                         }
-        
+
                         .nav-active {
                             color: $color-text-dark;
                             background: $gray-100;
@@ -55,6 +61,7 @@ header{
                     }
                 }
             }
+
             .sm-icons {
                 img {
                     width: 18px;
@@ -63,6 +70,7 @@ header{
                 }
             }
         }
+
         @include mq(large) {
             .nav {
                 &:hover {
@@ -70,6 +78,7 @@ header{
                     border-radius: 8px;
                 }
             }
+
             .sm-icons {
                 a {
                     .hover-color:hover {
@@ -79,5 +88,5 @@ header{
             }
         }
     }
-    
+
 }

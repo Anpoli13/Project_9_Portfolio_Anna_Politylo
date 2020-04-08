@@ -8,7 +8,8 @@
   color: #AEB5B8;
 }
 
-.info h1, .info p {
+.info h1,
+.info p {
   font-size: 28px;
   font-weight: normal;
 }
@@ -46,7 +47,8 @@
   font-size: 16px;
 }
 
-.about h2, .about a,
+.about h2,
+.about a,
 .to-projects h2,
 .to-projects a,
 .contact h2,
@@ -252,7 +254,8 @@ header .header .hide-sm {
 .info {
   padding: 80px 16px;
 }
-.info h1, .info p {
+.info h1,
+.info p {
   margin: 8px 0;
 }
 
@@ -434,7 +437,8 @@ header .header .hide-sm {
   padding: 40px 16px;
 }
 
-.about-info h1, .about-info p {
+.about-info h1,
+.about-info p {
   margin: 8px 0;
 }
 

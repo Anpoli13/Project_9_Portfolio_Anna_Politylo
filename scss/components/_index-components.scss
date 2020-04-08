@@ -1,6 +1,8 @@
 .info {
     padding: 80px 16px;
-    h1, p{
+
+    h1,
+    p {
         margin: 8px 0;
     }
 }
@@ -14,15 +16,19 @@
     margin: 16px;
     padding: 16px;
     border-radius: 16px;
+
     h3 {
         margin: 16px 0 0 0;
     }
+
     p {
         margin: 24px 0;
     }
+
     ul {
         padding: 0;
         margin: 0 -2px;
+
         li {
             display: inline-block;
             text-align: center;
@@ -33,6 +39,7 @@
             padding: 4px 12px;
         }
     }
+
     .card-btn {
         background-color: $color-button;
         border: none;
@@ -42,6 +49,7 @@
         width: 100%;
         text-align: center;
     }
+
     .project-img {
         display: none;
     }
@@ -49,9 +57,11 @@
 
 .cta {
     padding: 40px 0;
+
     .about,
     .to-projects {
         padding: 40px 16px;
+
         h2 {
             margin: 0;
         }
@@ -59,9 +69,11 @@
 
     .contact {
         padding: 40px 16px;
+
         h2 {
             margin: 8px 0;
         }
+
         a {
             padding: 8px 0 40px 0;
         }
@@ -95,19 +107,23 @@
 // Media queries
 
 @include mq(medium) {
+
     .info,
     .projects {
         max-width: 992px;
         margin: 0 auto;
+
         .card {
             display: flex;
             overflow: auto;
+
             .project-img {
                 display: block;
                 width: 50%;
                 margin: 0 -16px -16px 16px;
             }
         }
+
         .card-btn {
             width: 50%;
         }
@@ -119,6 +135,7 @@
         .hover-color:hover {
             filter: brightness(2);
         }
+
         a:hover {
             color: $white;
         }

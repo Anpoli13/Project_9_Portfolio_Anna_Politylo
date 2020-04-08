@@ -12,10 +12,10 @@
     cursor: pointer;
     padding: 6px 3px;
 }
-  
-.bar1, 
-.bar2, 
-.bar3, 
+
+.bar1,
+.bar2,
+.bar3,
 .bar4 {
     width: 18px;
     height: 2px;
@@ -40,9 +40,11 @@
     .bar2 {
         transform: rotate(45deg);
     }
+
     .bar3 {
         transform: rotate(-45deg);
     }
+
     .bar1,
     .bar4 {
         opacity: 0;
