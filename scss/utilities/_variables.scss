@@ -1,4 +1,4 @@
-// Colors
+// Names Of Base Colors
 
 $black     :#000000;
 $gray-900  :#1C1E1F;
@@ -13,11 +13,42 @@ $gray-100  :#F7F9FA;
 
 $white     :white;
 
-$project-1 :#F4E9F3;
+$athens-gray    :#F3F4F7;
+$whisper        :#F5F3F7;
+$hint-of-red    :#F7F3F3;
+$pampas         :#F7F7F3;
+$snow-drift     :#F3F7F3;
+$athens-gray-2  :#F3F5F7;
+
+
+// Colors
+
+$color-text-primary   :$gray-500;
+$color-text-secondary :$gray-700;
+$color-text-dark      :$gray-900;
+
+$color-background-primary :$gray-900;
+
+$color-button : rgba($gray-700, .08);
+
+$project-1 :$athens-gray;
+$project-2 :$whisper;
+$project-3 :$hint-of-red;
+$project-4 :$pampas;
+$project-5 :$snow-drift;
+$project-6 :$athens-gray-2;
 
 // Media query breakpoint
 
 $br-sm: 320px;
 $br-md: 768px;
 $br-lg: 1024px;
+
+// Typography
+
+$font-size-l : 28px;
+$font-size-m : 24px;
+$font-size-s : 20px;
+$font-size-xs : 16px;
+$font-size-xxs : 12px;
 

@@ -1,0 +1,160 @@
+.about-info {
+    padding: 80px 16px;
+}
+
+.section-info {
+    background-color: $black;
+}
+
+.experience,
+.skills,
+.education,
+.resume {
+    padding: 40px 16px;
+}
+
+.about-info {
+
+    h1,
+    p {
+        margin: 8px 0;
+    }
+}
+
+.experience,
+.education {
+    h2 {
+        margin: 0;
+    }
+
+    .exp-card,
+    .ed-card {
+        margin: 16px 0;
+        background-color: $color-text-dark;
+        padding: 16px;
+        border-radius: 16px;
+
+        h3 {
+            margin: 0;
+        }
+
+        .period {
+            margin-top: 8px;
+        }
+    }
+}
+
+.skills {
+    h2 {
+        margin: 40px 0 0 0;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            text-align: center;
+            background-color: $color-background-primary;
+            border-radius: 100px;
+            padding: 4px 12px;
+            margin: 16px 8px 0 0;
+        }
+    }
+}
+
+.resume {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-background-primary;
+        border-radius: 8px;
+        padding: 12px;
+    }
+}
+
+// Media queries
+
+@include mq(medium) {
+
+    .about-info,
+    .skills,
+    .education,
+    .experience,
+    .resume {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 992px;
+        margin: 0 auto;
+
+        h2 {
+            width: 45%;
+        }
+
+        .about-cards {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+    }
+
+    .about-info {
+        h1 {
+            width: 45%;
+        }
+
+        p {
+            width: 45%;
+        }
+    }
+
+    .skills {
+        ul {
+            width: 45%;
+        }
+    }
+
+    .resume {
+        .download {
+            background-color: $color-background-primary;
+        }
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 992px;
+        margin: 0 auto;
+
+        .to-projects,
+        .contact {
+            width: 45%;
+
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+
+}
+
+@include mq(large) {
+    .resume {
+        a {
+            justify-content: start;
+        }
+
+        .download {
+            background-color: $black;
+
+            &:hover {
+                background-color: rgba($white, 0.08);
+                width: 45%;
+            }
+        }
+    }
+}

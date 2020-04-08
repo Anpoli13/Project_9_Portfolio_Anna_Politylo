@@ -1,45 +1,11 @@
-// .overlay {
-//     display: none;
-//     //flex-direction: column;
-//     //align-items: center;
-//     background-color: $gray-900;
-//     z-index: -99;
-//     position: fixed;
-//     //top: 64px;
-//     width: 100%;
-//     height: 100%;
-    
-//     ul {
-//         list-style: none;
-//         color: $gray-500;
-//         //text-decoration: none;
-//         //margin: 64px 0;
-//         margin: 0;
-//         padding: 0;
-//         text-align: center;
-//         //top: 180px;
-//         align-self: center;
-//         li {
-//             padding: 32px 0;
-//         }
-//     }
-// }
-
-// .hide {
-//     display: flex;
-//     z-index: 1;
-// }
-
 .overlay {
     z-index: -999;
     display: none;
     position: fixed;
     top: 0;
-    //left: 0;
     width: 100%;
     height: 100%;
-    background-color: $gray-900;
-    //color: $gray-500;
+    background-color: $color-background-primary;
 
     &.hide {
         z-index: 1;
@@ -52,29 +18,34 @@
 
         ul {
             width: 100%;
-            //display: block;
             margin: 0;
             padding: 0;
             list-style: none;
             align-self: center;
-            
+
             li {
-                //width: 100%;
-                //display: block;
                 padding: 32px 0;
-                //text-decoration: none;
                 text-align: center;
+
+                .nav {
+                    text-decoration: none;
+                    color: $color-text-primary;
+                }
+
+                .nav-active {
+                    color: $white;
+                }
             }
         }
     }
 
-    .social-icons {
+    .sm-icons {
         display: inline-block;
         position: fixed;
         bottom: 16px;
         width: 100%;
         text-align: center;
-        
+
         img {
             padding: 8px;
             margin: 0 4px;

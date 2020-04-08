@@ -1,13 +1,21 @@
 // Media query mixin
 @mixin mq($break) {
-    @if $break == "medium" {
+    @if $break=="medium" {
         @media (min-width: $br-md) {
             @content;
         }
-    } @else if $break == "large" {
+    }
+
+    @else if $break=="large" {
         @media (min-width: $br-lg) {
             @content;
         }
     }
 }
 
+// Typography
+
+@mixin text-primary {
+    font-weight: normal;
+    font-size: $font-size-m;
+}

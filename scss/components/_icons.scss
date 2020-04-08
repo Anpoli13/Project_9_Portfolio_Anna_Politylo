@@ -1,7 +1,7 @@
 .logo {
-    background: $gray-200;
-    width: 32px;
-    height: 32px;
+    background: $gray-100;
+    width: 36px;
+    height: 36px;
     border-radius: 8px;
 }
 
@@ -12,10 +12,10 @@
     cursor: pointer;
     padding: 6px 3px;
 }
-  
-.bar1, 
-.bar2, 
-.bar3, 
+
+.bar1,
+.bar2,
+.bar3,
 .bar4 {
     width: 18px;
     height: 2px;
@@ -40,18 +40,23 @@
     .bar2 {
         transform: rotate(45deg);
     }
+
     .bar3 {
         transform: rotate(-45deg);
     }
+
     .bar1,
     .bar4 {
         opacity: 0;
     }
 }
 
-.project-icon {
-    width: 40px;
-    height: 40px;
-    background-color: $gray-900;
-    border-radius: 8px;
+// CTA
+
+.arrow {
+    margin-top: 8px;
+}
+
+.ic-download {
+    margin: 0 8px;
 }
