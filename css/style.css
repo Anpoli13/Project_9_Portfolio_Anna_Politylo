@@ -40,6 +40,10 @@
   font-size: 12px;
   color: #575A5C;
 }
+.card .subtitle {
+  font-size: 12px;
+  color: #575A5C;
+}
 .card .card-btn {
   color: #1C1E1F;
   text-decoration: none;
@@ -287,6 +291,10 @@ header .header .hide-sm {
   margin-top: 8px;
   padding: 4px 12px;
 }
+.card .subtitle {
+  margin-bottom: 8px;
+  margin-top: 0;
+}
 .card .card-btn {
   background-color: rgba(87, 90, 92, 0.08);
   border: none;
@@ -466,6 +474,10 @@ header .header .hide-sm {
 .education .exp-card .period,
 .education .ed-card .period {
   margin-top: 8px;
+}
+.experience .exp-card ul,
+.education .exp-card ul {
+  padding-left: 20px;
 }
 
 .skills h2 {
